@@ -18,10 +18,42 @@
         android:title="@string/navbar_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
-        android:key="force_navbar_bottom"
-        android:defaultValue="false"
-        android:title="@string/navbar_bottom"
-        android:summary="@string/navbar_bottom_summary" />
+    <PreferenceCategory
+        android:key="navigation_bar"
+        android:title="@string/navigation_bar_opt_cat" >
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="navigation_bar_show"
+            android:title="@string/navbar_enable_bar"
+            android:defaultValue="true" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="force_navbar_bottom"
+            android:defaultValue="false"
+            android:title="@string/navbar_bottom"
+            android:summary="@string/navbar_bottom_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="navigation_barc"
+        android:title="@string/navigation_bar_cus" >
+
+        <PreferenceScreen
+            android:fragment="com.nitrogen.settings.fragments.NavBarDimensSettings"
+            android:key="navbar_dimens"
+            android:title="@string/navbar_dimensions_title"
+            android:dependency="navigation_bar_show" />
+
+        <PreferenceScreen
+            android:title="@string/navbar_tuner_title"
+            android:summary="@string/navbar_tuner_summary"
+            android:dependency="navigation_bar_show" >
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.NavbarActivity" />
+        </PreferenceScreen>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
