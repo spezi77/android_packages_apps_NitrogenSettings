@@ -488,6 +488,9 @@
     <string name="navigation_bar_cus">Navbar customization</string>
     <string name="navbar_bottom">Navbar orientation</string>
     <string name="navbar_bottom_summary">Force show navbar on the bottom side of device when rotated to 270 degrees</string>
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Pixel navbar animation</string>
+    <string name="pixel_navbar_anim_summary">Requires a config change (display size, navbar position, reboot)
     <!-- Navbar toggle -->
     <string name="navbar_enable_bar">Enable</string>
     <!-- Navbar Dimensions -->
