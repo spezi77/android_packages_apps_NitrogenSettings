@@ -28,7 +28,7 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.nitrogen.settings.utils.Utils;
+import com.nitrogen.settings.preferences.Utils;
 
 public class NavBarDimensSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
