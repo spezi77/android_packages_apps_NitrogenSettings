@@ -490,7 +490,7 @@
     <string name="navbar_bottom_summary">Force show navbar on the bottom side of device when rotated to 270 degrees</string>
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Pixel navbar animation</string>
-    <string name="pixel_navbar_anim_summary">Requires a config change (display size, navbar position, reboot)
+    <string name="pixel_navbar_anim_summary">Requires a config change (display size, navbar position, reboot)</string>
     <!-- Navbar toggle -->
     <string name="navbar_enable_bar">Enable</string>
     <!-- Navbar Dimensions -->
@@ -613,4 +613,5 @@
 
     <string name="dnd_when_call_title">Do not Disturb</string>
     <string name="dnd_when_call_summary">Enable Do not Disturb when call active</string>
+
 </resources>
