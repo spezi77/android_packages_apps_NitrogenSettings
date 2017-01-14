@@ -351,6 +351,22 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+    </string-array>
 
     <!-- Carrier Label -->
     <string-array name="carrier_label_entries" translatable="false">
@@ -544,4 +560,5 @@
         <item>@string/daylight_header_provider</item>
         <item>@string/static_header_provider</item>
     </string-array>
+
 </resources>
